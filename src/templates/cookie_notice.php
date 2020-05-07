@@ -9,7 +9,7 @@ window.cookieconsent.initialise({
       "text": "#ffffff"
     },
     "button": {
-      "background": "#007bff"
+      "background": "#002c5f"
     }
   },
   "content": {

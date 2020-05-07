@@ -7,20 +7,20 @@ include "config.php";
     <p>
       <h2>اسکرام پوکر آنلاین</h2>
       به ابزار رایگان اسکرام پوکر آنلاین خوش آمدید. این برنامه رایگان بوده و تا ابد رایگان خواهد ماند.
-      این برنامه متن باز، از نسخه اصلی آن در گیت‌هاب فورک شده و دچار تغییراتی به منظور سهولت دسترسی کاربران در این سرور بارگذاری شده است. 
+      این برنامه متن باز، از نسخه اصلی آن در گیت‌هاب فورک شده و با اعمال تغییراتی به منظور سهولت دسترسی کاربران در این سرور بارگذاری شده است. 
       به عنوان اسکرام مستر تیم، می‌توانید یک جلسه برنامه‌ریزی اسپرینت را با نام دلخواه ایجاد کرده و از اعضای تیم خود بخواهید که به آن بپیوندند.
-      اگر جلسات برنامه‌ریزی خود را به صورت حضوری برگزار می‌کنید، پیشنهاد می‌کنم تا جلسه ساخته شده خود را از طریق پروژکتور یا یک صفحه نمایشگر بزرگ در اتاق به نمایش گذاشته و از اعضای تیم خود بخواهید با اسکن بارکد درج شده در صفحه به جلسه شما ملحق شوند. 
+      اگر جلسات برنامه‌ریزی خود را به صورت حضوری برگزار می‌کنید، پیشنهاد می‌کنم تا جلسه ساخته شده خود را از طریق پروژکتور یا یک صفحه نمایشگر بزرگ در اتاق به نمایش گذاشته و از اعضای تیم خود بخواهید تا با اسکن بارکد درج شده در صفحه به جلسه شما ملحق شوند. 
     </p>
   </article>
 </div>
             
 <div class="row">
-  <h2 class="col-xs-12 col-lg-10 col-lg-offset-1">ساخت یا پیوستن به یک جلسه برنامه‌ریزی اسپرینت</h2>
+  <h2 class="col-xs-12 col-lg-10 col-lg-offset-1">ساخت یا پیوستن به یک جلسه برنامه‌ریزی</h2>
       
   <!-- Create session panel -->
   <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1" ng-controller="CreateController as create">
     <div class="panel panel-default">
-      <div class="panel-heading">ساخت یک جلسه برنامه‌ریزی</div>
+      <div class="panel-heading">ساخت یک جلسه</div>
       <div class="panel-body">  
         <form role="form">
           <div class="form-group" ng-class="{'has-error': create.nameError}">
@@ -31,7 +31,7 @@ include "config.php";
             </div>
           </div>
           <div class="form-group">
-            <label>نوع کارت: <a target="_blank" href="<?= $src ?>/src/sample-config.php#L17">?</a></label>
+            <label>نوع کارت: <a target="_blank" href="<?= $src ?>/src/sample-config.php#L17">؟</a></label>
             <div class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                 <span ng-bind-html="create.selectedSet.value"></span>
@@ -54,7 +54,7 @@ include "config.php";
               <span ng-if="create.pwdError" class="glyphicon glyphicon-remove form-control-feedback"></span>
             </div>
           </div>
-          <input type="button" class="btn btn-default" value="Create" ng-click="create.createSession()">
+          <input type="button" class="btn btn-default" value="ساخت" ng-click="create.createSession()">
         </form>
       </div>
     </div>        
@@ -87,7 +87,7 @@ include "config.php";
               <span ng-if="join.passwordError" class="glyphicon glyphicon-remove form-control-feedback"></span>
             </div>
           </div>
-          <input type="button" class="btn btn-default" value="Join" ng-click="join.joinSession()">
+          <input type="button" class="btn btn-default" value="پیوستن" ng-click="join.joinSession()">
        </form>
       </div>
     </div>        
