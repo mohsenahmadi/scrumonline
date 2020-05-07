@@ -19,8 +19,8 @@ foreach($templates as $index=>$template)
   <meta charset="utf-8">
   <base href="/">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Online planning poker</title>
-  <meta name="description" content="Scrumpoker online is an open source web implementation of planning poker for scrum teams to determine the complexity of stories. It aims to integrate ticketing systems like JIRA, Github or Gitlab.">  
+  <title>اسکرام پوکر آنلاین</title>
+  <meta name="description" content="اسکرام پوکر آنلاین، ابزاری برای تیم‌های اسکرام است که در جلسات برنامه‌ریزی اسپرینت می‌توانند از آن به رایگان استفاده کنند.">  
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -52,24 +52,6 @@ foreach($templates as $index=>$template)
    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<!--new ribbon
-<div class="fork-ribbon-wrapper green">
-  <div class="fork-ribbon-border"></div>
-  <div class="fork-ribbon-container">
-    <div class="fork-ribbon">
-      <div class="fork-ribbon-content"><a href="#"><i class="fa fa-github"></i><br/>Fork me on GitHub</a></div>
-    </div>
-  </div>
-</div>
--->
-
-<!--Github Fork Badge -->
-<div class="github-fork-ribbon-wrapper hidden-xs">
-  <div class="github-fork-ribbon">
-    <a target="_blank" href="https://github.com/Toxantron/scrumonline">Fork me on GitHub</a>
-  </div>
-</div>
-
 <!-- Top navigation bar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid navigation">
@@ -80,7 +62,7 @@ foreach($templates as $index=>$template)
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    	<a class="navbar-brand" href="/">Scrum Poker</a>
+    	<a class="navbar-brand" href="/">اسکرام پوکر آنلاین</a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
