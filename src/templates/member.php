@@ -32,10 +32,12 @@ include __DIR__ . "/../config.php";
 </div>
 
 <div class="row">
-  <h2 class="col-xs-12">How to:</h2>
+  <h2 class="col-xs-12">چگونه:</h2>
   <p class="col-xs-12">
-    Votes can only be placed during an active poll.That means as long as the master has not started a poll or all votes have been placed, you can not vote!
-    When you select a card it is highlighted in red, meaning that you vote is processed by the server. If it was placed successfully the card is highlighted
-    green as feedback. Until everyone has placed their vote you can still change it. When the last person votes the poll is closed.
+    فقط در یک جلسه می‌توان رای داد. این بدان معناست که تا زمانی که اسکرام مستر جلسه را شروع نکرده باشد یا یا تمامی اعضا به آن رای داده باشند، شما نمی‌توانید رای خود را ثبت کنید. 
+    وقتی که کارتی را انتخاب می‌کنید، رنگ آن به قرمز تغییر می‌کند و این یعنی رای شما توسط سرور در حال پردازش است. 
+    زمانی که پردازش سرور خاتمه پیدا کرده و رای شما ثبت شود، رنگ آن به سبز تغییر خواهد کرد. 
+    تا زمانی که تمامی اعضای جلسه رای خود را ثبت نکرده باشند، شما می‌توانید رای خود را تغییر دهید و زمانی که تمامی اعضا رای خود را ثبت کنند، رای‌گیری به پایان می‌رسد.
+    
   </p>
 </div>
