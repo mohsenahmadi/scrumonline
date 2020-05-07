@@ -9,7 +9,7 @@ $conn = array(
 );
 
 // This is used to create the join link
-$host = "https://localhost";
+$host = "https://scrumpoker.ahmadi.pm";
 
 $cardSets = [
     // 1, 3, 5, 8
