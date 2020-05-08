@@ -6,10 +6,10 @@ Make sure to adjust the config.php to your requirements. The web-root of the app
 # Requirements
 The app requires a couple of packages you need to install on your system. Those are:
 - Apache or Ngnix
-- PHP >= 7.1
+- PHP >= 5.6
 - MySQL, MySQL-PDO
 
-or alternatively you can use [Docker](https://github.com/chrisns/scrumonline) provided and maintained by @chrisns.
+or alternatively you can use [Vagrant](Vagrant.md) or [Docker](Docker.md).
 
 # Webservers
 - [Nginx Deployment](Deployment-Nginx.md)

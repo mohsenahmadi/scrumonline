@@ -9,9 +9,11 @@ $conn = array(
 );
 
 // This is used to create the join link
-$host = "https://localhost";
+$host = "https://scrumonline.local";
 
 $cardSets = [
+    // 1, 3, 5, 8
+    ['1', '2', '3', '5', '8'],
     // Standard fibonaci like series of values
     ['1', '2', '3', '5', '8', '13', '20', '40', '100'],
     // Special card set with '?' for unclear stories
@@ -32,6 +34,8 @@ $cardSets = [
     ['1', '2', '5', '10', '20', '50', '100'],
     // Standard fibonacci with shrug
    ['1', '2', '3', '5', '8', '13', '&#F937;']
+    //Salesforce Estimates 
+    ['0.5','1','3','5','8']
 ];
 
 // Src tree for documentation linking from page

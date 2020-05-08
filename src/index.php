@@ -30,7 +30,9 @@ foreach($templates as $index=>$template)
   <!-- Style sheets -->
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/bootstrap-rtl.min.css?version=3.3.6">
+
   <link rel="stylesheet" href="/css/iransans.css">
+
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/normalize.css">
