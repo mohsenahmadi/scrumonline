@@ -5,11 +5,11 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#007bff",
+      "background": "#eb6c44",
       "text": "#ffffff"
     },
     "button": {
-      "background": "#002c5f"
+      "background": "#f5d948"
     }
   },
   "content": {

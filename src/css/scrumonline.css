@@ -96,7 +96,7 @@ div.card-container h2 {
 }
 
 div.card {
-  border: 2px solid #002c5f;
+  border: 2px solid #0F1593;
   border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -104,8 +104,8 @@ div.card {
 div.card .inner {
   margin: 3px 3px 0;
   border-radius: 12px;
-  background-image: linear-gradient(to bottom, #002c5f, #002c5f);
-  background-image: -webkit-linear-gradient(top, #002c5f, #002c5f);
+  background-image: linear-gradient(to bottom, #0F1593, #161ec9);
+  background-image: -webkit-linear-gradient(top, #0F1593, #161ec9);
   text-align: center;
 }
 
@@ -192,10 +192,10 @@ div.card-flip.flipped {
 
 /* Selectable card */
 div.card.active {
-  box-shadow: 0px 0px 20px 5px #CE412A;
+  box-shadow: 0px 0px 20px 5px #c80020;
 }
 div.card.confirmed {
-  box-shadow: 0px 0px 20px 5px #9dea4f;
+  box-shadow: 0px 0px 20px 5px #7ec500;
 }
 button.vote {
   width: 100%;
