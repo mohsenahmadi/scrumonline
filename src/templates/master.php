@@ -5,7 +5,7 @@ include __DIR__ . "/../config.php";
 <!-- Headline -->
 <div class="row">
   <div class="col-xs-12 col-sm-1">
-    <button class="btn btn-lg btn-danger wipe" ng-click="master.wipe()">Wipe</button>
+    <button class="btn btn-lg btn-danger wipe" ng-click="master.wipe()">پاکسازی</button>
   </div>
   <div class="col-xs-10 col-sm-8 col-md-10">
     <h1>{{ master.id }} - {{ master.name }}</h1>
@@ -36,7 +36,7 @@ include __DIR__ . "/../config.php";
         <div class="deletable-card">
           <div class="card-flip" ng-class="{flipped: master.flipped}">
             <div class="card front" ng-class="{active: vote.active}">
-              <div ng-if="vote.placed" class="inner"><span class="card-label">?</span></div>
+              <div ng-if="vote.placed" class="inner"><span class="card-label">؟</span></div>
             </div>
             <div class="card back" ng-class="{active: vote.active, confirmed: master.consensus}">
               <div class="inner"><span class="card-label" ng-bind-html="vote.value"></span></div>
@@ -55,40 +55,40 @@ include __DIR__ . "/../config.php";
 <!-- Invite and statistics -->            
 <div class="row">
   <div class="hidden-xs hidden-sm col-md-5">
-    <h2>Invite members</h2>
-    <p>Invite members to join your session. Session id: <strong ng-bind="master.id"></strong></p>
+    <h2>دعوت</h2>
+    <p>از اعضای تیم خود دعوت کنید تا به این جلسه محلق شوند. شناسه جلسه شما: <strong ng-bind="master.id"></strong></p>
 <?php
 $joinUrl = $host . "/join/";
 ?>
-    <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=<?= urlencode($joinUrl) . "{{ master.joinFragment }}" ?>&choe=UTF-8" title="Join {{ master.id }}" />
+    <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=<?= urlencode($joinUrl) . "{{ master.joinFragment }}" ?>&choe=UTF-8" title="پیوستن {{ master.id }}" />
 <?php
 $joinUrl = $joinUrl . "{{ master.joinFragment }}";
 ?>
-    <p>Or send them this link: <a href="<?= $joinUrl ?>"><?= $joinUrl ?></a>
+    <p>یا این لینک را به اعضای خود ارسال کنید: <a href="<?= $joinUrl ?>"><?= $joinUrl ?></a>
   </div>
 
   <!-- Team list and complete button -->
   <div class="col-xs-12 col-md-5" ng-if="!master.teamComplete">
-    <h2>Team</h2>
+    <h2>اعضای تیم</h2>
     <ul class="list-group">
       <!-- Iterate over votes as they represent members as well -->
       <li class="list-group-item" ng-repeat="member in master.votes track by member.id">{{$index + 1}}. {{member.name}}</li>
     </ul>
-    <button class="btn btn-success" ng-click="master.teamComplete = true">Team complete</button>
+    <button class="btn btn-success" ng-click="master.teamComplete = true">تیم کامل شد</button>
   </div>   
     
   <!-- Statistics column -->
   <div class="col-xs-12 col-md-7" ng-if="master.teamComplete">
     <div class="panel panel-default">
-      <div class="panel-heading">Statistics</div>
+      <div class="panel-heading">آمار</div>
       <div class="panel-body">
-        <p ng-hide="master.statistics">Statistics will appear as soon as the first poll is concluded!</p>
+        <p ng-hide="master.statistics">با اولین اعلام نظر، آمار نمایش داده می‌شود.</p>
         <table class="table table-striped" ng-show="master.statistics">
           <thead>
             <tr>
-              <th>Enabled</th>
-              <th>Name</th>
-              <th>Value</th>
+              <th>فعال</th>
+              <th>نام</th>
+              <th>مقدار</th>
             </tr>
           </thead>
           <tbody>
@@ -105,7 +105,7 @@ $joinUrl = $joinUrl . "{{ master.joinFragment }}";
               <td></td>
               <td>
                 <a target="_blank" href="<?php echo $src ?>/src/controllers/statistics">
-                  Want more?
+                  بیشتر می‌خواهید؟
                 </a>
               </td>
               <td></td>
