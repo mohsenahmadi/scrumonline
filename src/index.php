@@ -70,7 +70,7 @@ foreach($templates as $index=>$template)
       <?php foreach($navItems as $navItem): ?>
         <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="<?php echo $navItem->link ?>"><?php echo $navItem->navigationTag ?></a></li>
         <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="https://fa.ahmadi.pm">یادداشت‌های فارسی</a></li>
-        <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="https://fa.ahmadi.pm/reading-list">ریدینگ لیست</a></li>
+        <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="https://fa.ahmadi.pm/reading-list">خواندنی‌های پیشنهادی</a></li>
       <?php endforeach; ?>
       </ul>
     </div> <!--/.nav-collapse -->
